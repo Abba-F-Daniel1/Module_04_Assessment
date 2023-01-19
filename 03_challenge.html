@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Custom name tags</title>
+</head>
+<body>
+  <div class="name-tag">
+    <h1>Hello, my name is...</h1>
+    <p>Grace Hopper</p>
+</div>
+
+<div class="name-tag">
+    <h1>Hello, my name is...</h1>
+    <p>Alan Turing</p>
+</div>
+
+<div class="name-tag">
+  <h1>Hello, my name is...</h1>
+  <p>Barbara Liskov</p>
+</div>
+
+<div class="name-tag">
+  <h1>Hello, my name is...</h1>
+  <p>Guido van Rossum</p>
+</div>
+
+<script>
+  var namEs = document.getElementsByTagName("h1");
+  for (i = 0; i < namEs.length; i++) {
+    namEs[i].innerHTML = "Allo...";
+  }
+
+</script>
+</body>
+</html>
