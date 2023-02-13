@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Cat-stache</title>
+</head>
+<style>
+  #mustache-pic{
+    position: absolute;
+
+  }
+</style>
+<body>
+  <img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/cat.png" width="300" alt="cat photo">
+        
+        <img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100">
+</body>
+<script>
+  var myCat = document.querySelector("#cat-pic");
+    var onCatClick = function(e) {
+      var catMusty = document.querySelector("#mustache-pic");
+  catMusty.style.top = "115px";
+  catMusty.style.left = "110px";
+  };
+  myCat.addEventListener("click", onCatClick);
+
+</script>
+</html>
